@@ -377,6 +377,49 @@ sudo systemctl restart create-ap-hotspot.service
 - ⚠️ Use this in trusted places (home, classroom)
 - ✅ Your personal stuff is safe (separate network)
 
+## 👥 User Accounts (Updated 2026-01-08)
+
+### Available Users
+
+**orangepi (Default User)**
+- Username: `orangepi`
+- Password: `orangepi`
+- Purpose: Normal operations, running scripts
+- Sudo: Yes (requires password)
+
+**lorenzo (Admin User)**
+- Username: `lorenzo`
+- Password: None (no password required)
+- Purpose: Administrative tasks, full system access
+- Sudo: Yes (NOPASSWD: ALL - can run sudo commands without password)
+
+### When to Use Each User
+
+**Use `orangepi` for:**
+- Daily operations
+- Running Python scripts
+- Learning and experimenting
+- Safe from accidental system changes (sudo requires password)
+
+**Use `lorenzo` for:**
+- System administration
+- Installing packages
+- Modifying system configurations
+- Quick sudo operations without typing password repeatedly
+
+### How to Switch Users
+
+```bash
+# Switch to lorenzo (passwordless)
+su - lorenzo
+
+# Switch back to orangepi
+exit
+
+# Run a single command as lorenzo
+sudo -u lorenzo [command]
+```
+
 ## 🎁 What You'll Create
 
 After using this, you/your kids can:
