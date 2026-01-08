@@ -1,0 +1,9 @@
+# Should shellinaboxd start automatically
+SHELLINABOX_DAEMON_START=1
+
+# TCP port that shellinboxds listens on
+SHELLINABOX_PORT=4200
+
+# Options to pass to shellinaboxd daemon
+# Simplified - let user login normally but with no password
+SHELLINABOX_ARGS="--no-beep --disable-ssl --disable-ssl-menu"
