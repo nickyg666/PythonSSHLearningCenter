@@ -1,0 +1,21 @@
+#!/bin/bash
+# .auto_login - Auto login script for PythonSSHLearningCenter
+# Runs when device connects and audio is ready
+
+# Check if we should auto-login to PythonSSHLearningCenter
+# If you want to skip this, just comment out or delete this script
+
+echo "=========================================="
+echo "🎮 PythonSSHLearningCenter Auto-Login"
+echo "=========================================="
+echo ""
+echo "Ready to start coding!"
+echo ""
+echo "Quick Options:"
+echo "  1. Browser Terminal: http://192.168.12.1:4200"
+echo "  2. Python Games: cd ~/python-fun/games && python3 guess_number.py"
+echo "  3. Turtle Art: cd ~/python-fun/turtle && python3 rainbow_turtle.py"
+echo "  4. Start Shell: just press Enter to get terminal"
+echo ""
+echo "Have fun learning Python! 🐍✨"
+echo "=========================================="
