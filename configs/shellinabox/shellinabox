@@ -5,5 +5,5 @@ SHELLINABOX_DAEMON_START=1
 SHELLINABOX_PORT=4200
 
 # Options to pass to shellinaboxd daemon
-# Simplified - let user login normally but with no password
-SHELLINABOX_ARGS="--no-beep --disable-ssl --disable-ssl-menu"
+# Auto-login as lorenzo user with no password required
+SHELLINABOX_ARGS="--no-beep --disable-ssl --disable-ssl-menu --static-file=/vk.js:$(ls /var/lib/shellinabox/virtual-keyboard.js 2>/dev/null || echo /dev/null)"
